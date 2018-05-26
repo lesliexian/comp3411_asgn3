@@ -10,7 +10,7 @@ from collections import namedtuple
 from agent import GameAgentBaseClass
 from utils import *
 
-class ExplorerAgent(object):
+class ExplorerAgent(GameAgentBaseClass):
     def __init__(self, port):
         super(ExplorerAgent, self).__init__(port)
         self.map = {(0,0) : TileType.SPAWN}
